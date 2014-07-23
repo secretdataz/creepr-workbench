@@ -69,11 +69,17 @@
                       </ul>
                     </li>
 										@if (Auth::check())
-										<li><a href="{{{ URL::to('user') }}}"><span class="octicon octicon-person"></span>&nbsp; {{{ Auth::user()->username }}}</a></li>
-                    @if (Auth::user()->hasRole('admin'))
-                    <li><a href="{{{ URL::to('admin') }}}"><span class="octicon octicon-tools"></span>&nbsp; Backend</a></li>
-                    @endif
-										<li><a href="{{{ URL::to('user/logout') }}}"><span class="octicon octicon-sign-out"></span>&nbsp; Sign Out</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?php echo 'https://minotar.net/helm/' . Auth::user()->username . '/16.png'; ?>">&nbsp; {{{ Auth::user()->username }}} <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="{{{ URL::to('user') }}}"><span class="octicon octicon-gear"></span>&nbsp; Settings</a></li>
+                        <li><a href="{{{ URL::to('user/logout') }}}"><span class="octicon octicon-sign-out"></span>&nbsp; Sign Out</a></li>
+                        @if (Auth::user()->hasRole('admin'))
+                        <li class="divider"></li>
+                        <li><a href="{{{ URL::to('admin') }}}"><span class="octicon octicon-tools"></span>&nbsp; Backend</a></li>
+                        @endif
+                      </ul>
+                    </li>
 										@else
 										<li {{ (Request::is('user/login') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/login') }}}"><span class="octicon octicon-key"></span>&nbsp; Sign In</a></li>
 										<li {{ (Request::is('user/register') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/create') }}}"><span class="octicon octicon-sign-in"></span>&nbsp; Register</a></li>
