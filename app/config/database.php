@@ -65,10 +65,10 @@ return array(
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
-			'host'     => 'ec2-54-204-41-249.compute-1.amazonaws.com',
-			'database' => 'dbig22fk7dq869',
-			'username' => 'ixbvkqctwlgnpd',
-			'password' => 'W3B_fiJxVPdigbmFRIRLRLJHob',
+			'host'     => 'ec2-54-204-2-217.compute-1.amazonaws.com',
+			'database' => 'd82e6icb2uo8tm',
+			'username' => 'hmarivlmhzvfbe',
+			'password' => '3s7a8W8UDgYIVx2NC9GCZheQpc',
 			'charset'  => 'utf8',
 			'prefix'   => '',
             'schema'   => 'public',
@@ -115,7 +115,7 @@ return array(
 
 		'default' => array(
 			'host'     => '127.0.0.1',
-			'port'     => 6379,
+			'port'     => 5432,
 			'database' => 0,
 		),
 
