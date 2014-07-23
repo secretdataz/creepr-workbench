@@ -103,6 +103,12 @@ Route::get('contact-us', function()
     return View::make('site/contact-us');
 });
 
+//:: Page Routes::
+
+Route::get('cast', 'PageController@cast');
+Route::get('content', 'PageController@content');
+Route::get('contribute', 'PageController@contribute');
+
 # Posts - Second to last set, match slug
 Route::get('{postSlug}', 'BlogController@getView');
 Route::post('{postSlug}', 'BlogController@postView');

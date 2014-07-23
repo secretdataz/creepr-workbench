@@ -2,48 +2,32 @@
 
 {{-- Content --}}
 @section('content')
-@foreach ($posts as $post)
 <div class="row">
-	<div class="col-md-8">
-		<!-- Post Title -->
-		<div class="row">
-			<div class="col-md-8">
-				<h4><strong><a href="{{{ $post->url() }}}">{{ String::title($post->title) }}</a></strong></h4>
-			</div>
-		</div>
-		<!-- ./ post title -->
+	<div class="col-md-4">
 
-		<!-- Post Content -->
-		<div class="row">
-			<div class="col-md-2">
-				<a href="{{{ $post->url() }}}" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
-			</div>
-			<div class="col-md-6">
-				<p>
-					{{ String::tidy(Str::limit($post->content, 200)) }}
-				</p>
-				<p><a class="btn btn-mini btn-default" href="{{{ $post->url() }}}">Read more</a></p>
-			</div>
-		</div>
-		<!-- ./ post content -->
+		@include('site.layouts.sidebar')
 
-		<!-- Post Footer -->
-		<div class="row">
-			<div class="col-md-8">
-				<p></p>
-				<p>
-					<span class="glyphicon glyphicon-user"></span> by <span class="muted">{{{ $post->author->username }}}</span>
-					| <span class="glyphicon glyphicon-calendar"></span> <!--Sept 16th, 2012-->{{{ $post->date() }}}
-					| <span class="glyphicon glyphicon-comment"></span> <a href="{{{ $post->url() }}}#comments">{{$post->comments()->count()}} {{ \Illuminate\Support\Pluralizer::plural('Comment', $post->comments()->count()) }}</a>
-				</p>
-			</div>
-		</div>
-		<!-- ./ post footer -->
 	</div>
-</div>
 
-<hr />
-@endforeach
+	<div class="col-md-8">
+		@foreach ($posts as $post)
+			<div class="panel panel-default">
+		  	<div class="panel-body">
+			  	<div class="video-container">
+		      	<iframe src="//www.youtube.com/embed/TbG1ri0IOi0" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+		      </div>
+		    </div>
+		    <div class="panel-footer">
+		    	<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ String::title($post->title) }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
+		      <p>{{ String::tidy(Str::limit($post->content, 200)) }}</p>
+					<hr>
+					<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">Read more <span class="octicon octicon-chevron-right"></span></a></p>
+		    </div>
+		  </div> <!-- .panel panel-default -->
+		@endforeach
+	</div> <!-- .col-md-8 -->
+
+</div> <!-- .row -->
 
 {{ $posts->links() }}
 

@@ -26,7 +26,7 @@ class BlogController extends BaseController {
         $this->post = $post;
         $this->user = $user;
     }
-    
+
 	/**
 	 * Returns all the blog posts.
 	 *
@@ -39,6 +39,7 @@ class BlogController extends BaseController {
 
 		// Show the page
 		return View::make('site/blog/index', compact('posts'));
+
 	}
 
 	/**

@@ -1,115 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Basic Page Needs
-		================================================== -->
-		<meta charset="utf-8" />
-		<title>
-			@section('title')
-			Laravel 4 Sample Site
-			@show
-		</title>
-		<meta name="keywords" content="your, awesome, keywords, here" />
-		<meta name="author" content="Jon Doe" />
-		<meta name="description" content="Lorem ipsum dolor sit amet, nihil fabulas et sea, nam posse menandri scripserit no, mei." />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Creepr Network</title>
 
-		<!-- Mobile Specific Metas
-		================================================== -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="http://i.imgur.com/WS5ZCTp.png" />
+    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-		<!-- CSS
-		================================================== -->
-        <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap-theme.min.css')}}">
+    <!-- Latest compiled and minified CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="{{asset('css/octicons.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
 
-		<style>
-        body {
-            padding: 60px 0;
-        }
-		@section('styles')
-		@show
-		</style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="http://i.imgur.com/WS5ZCTp.png" class="mainLogo" alt="Creepr"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Creepr Network</a>
+            </div>
 
-		<!-- Favicons
-		================================================== -->
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{{ asset('assets/ico/apple-touch-icon-144-precomposed.png') }}}">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{{ asset('assets/ico/apple-touch-icon-114-precomposed.png') }}}">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{{ asset('assets/ico/apple-touch-icon-72-precomposed.png') }}}">
-		<link rel="apple-touch-icon-precomposed" href="{{{ asset('assets/ico/apple-touch-icon-57-precomposed.png') }}}">
-		<link rel="shortcut icon" href="{{{ asset('assets/ico/favicon.png') }}}">
-	</head>
-
-	<body>
-		<!-- To make sticky footer need to wrap in a div -->
-		<div id="wrap">
-		<!-- Navbar -->
-		<div class="navbar navbar-default navbar-inverse navbar-fixed-top">
-			 <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav">
-						<li {{ (Request::is('/') ? ' class="active"' : '') }}><a href="{{{ URL::to('') }}}">Home</a></li>
-					</ul>
-
-                    <ul class="nav navbar-nav pull-right">
-                        @if (Auth::check())
-                        @if (Auth::user()->hasRole('admin'))
-                        <li><a href="{{{ URL::to('admin') }}}">Admin Panel</a></li>
-                        @endif
-                        <li><a href="{{{ URL::to('user') }}}">Logged in as {{{ Auth::user()->username }}}</a></li>
-                        <li><a href="{{{ URL::to('user/logout') }}}">Logout</a></li>
-                        @else
-                        <li {{ (Request::is('user/login') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/login') }}}">Login</a></li>
-                        <li {{ (Request::is('user/register') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/create') }}}">{{{ Lang::get('site.sign_up') }}}</a></li>
-                        @endif
-                    </ul>
-					<!-- ./ nav-collapse -->
-				</div>
-			</div>
-		</div>
-		<!-- ./ navbar -->
-
-		<!-- Container -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="octicon octicon-home"></span>&nbsp; About <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="/cast"><span class="octicon octicon-organization"></span>&nbsp; Cast</a></li>
+                        <li><a href="#"><span class="octicon octicon-database"></span>&nbsp; Server</a></li>
+                        <li><a href="#"><span class="octicon octicon-gist-secret"></span>&nbsp; Jobs</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/contribute" class="contribute-link"><span class="octicon octicon-heart"></span>&nbsp; Contribute</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="/content" class="dropdown-toggle" data-toggle="dropdown"><span class="octicon octicon-device-camera-video"></span>&nbsp; Content <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="octicon octicon-device-desktop"></span>&nbsp; Videos</a></li>
+                        <li><a href="#"><span class="octicon octicon-broadcast"></span>&nbsp; Podcasts</a></li>
+                        <li><a href="#"><span class="octicon octicon-gift"></span>&nbsp; Merchandise</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="octicon octicon-home"></span>&nbsp; Community <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="octicon octicon-comment-discussion"></span>&nbsp; Forums</a></li>
+                        <li><a href="#"><span class="socicon">r</span>&nbsp; YouTube</a></li>
+                        <li><a href="#"><span class="socicon">a</span>&nbsp; Twitter</a></li>
+                      </ul>
+                    </li>
+										@if (Auth::check())
+										<li><a href="{{{ URL::to('user') }}}"><span class="octicon octicon-person"></span>&nbsp; {{{ Auth::user()->username }}}</a></li>
+                    @if (Auth::user()->hasRole('admin'))
+                    <li><a href="{{{ URL::to('admin') }}}"><span class="octicon octicon-tools"></span>&nbsp; Backend</a></li>
+                    @endif
+										<li><a href="{{{ URL::to('user/logout') }}}"><span class="octicon octicon-sign-out"></span>&nbsp; Sign Out</a></li>
+										@else
+										<li {{ (Request::is('user/login') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/login') }}}"><span class="octicon octicon-key"></span>&nbsp; Sign In</a></li>
+										<li {{ (Request::is('user/register') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/create') }}}"><span class="octicon octicon-sign-in"></span>&nbsp; Register</a></li>
+										@endif
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 		<div class="container">
 			<!-- Notifications -->
 			@include('notifications')
 			<!-- ./ notifications -->
 
-			<!-- Content -->
-			@yield('content')
-			<!-- ./ content -->
+	    @yield('content')
 		</div>
-		<!-- ./ container -->
 
-		<!-- the following div is needed to make a sticky footer -->
-		<div id="push"></div>
-		</div>
-		<!-- ./wrap -->
-
-
-	    <div id="footer">
-	      <div class="container">
-	        <p class="muted credit">Laravel 4 Starter Site on <a href="https://github.com/andrew13/Laravel-4-Bootstrap-Starter-Site">Github</a>.</p>
-	      </div>
-	    </div>
-
-		<!-- Javascripts
-		================================================== -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
-
-        @yield('scripts')
-	</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    </body>
 </html>
