@@ -1,7 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <div class="page-header"><h4 class="panel-heading">Server Status</h4></div>
-    <?php
+    <!-- <?php
       $status = new MinecraftServerStatus();
       $response = $status->getStatus('us.creepr.co', 25565);
       if (!$response) {
@@ -9,7 +9,7 @@
       } else {
         echo '<a class="btn btn-success btn-lg btn-block" href="#"><span class="octicon octicon-primitive-dot"></span>&nbsp; us.creepr.co</a>';
       }
-    ?>
+    ?> -->
   </div>
 </div>
 
