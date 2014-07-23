@@ -61,7 +61,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="octicon octicon-home"></span>&nbsp; Community <span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="octicon octicon-megaphone"></span>&nbsp; Community <span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu">
                         <li><a href="#"><span class="octicon octicon-comment-discussion"></span>&nbsp; Forums</a></li>
                         <li><a href="#"><span class="socicon">r</span>&nbsp; YouTube</a></li>
