@@ -3,7 +3,8 @@
     <div class="page-header"><h4 class="panel-heading">Server Status</h4></div>
       <?php
         $status = new MinecraftServerStatus();
-        if ($status->getStatus('us.creepr.co', 25565)) {
+        $response = $status->getStatus('us.creepr.co', 25565);
+        if (!$response) {
           echo '<a class="btn btn-danger btn-lg btn-block" href="#"><span class="octicon octicon-primitive-dot"></span>&nbsp; us.creepr.co</a>';
         } else {
           echo '<a class="btn btn-success btn-lg btn-block" href="#"><span class="octicon octicon-primitive-dot"></span>&nbsp; us.creepr.co</a>';
