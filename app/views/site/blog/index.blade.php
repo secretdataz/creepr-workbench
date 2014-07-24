@@ -18,9 +18,9 @@
 					</div>
 					<div class="panel-footer">
 						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ String::title($post->title) }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
-						<p>{{ String::tidy(Str::limit($post->content, 200)) }}</p>
+						<p>{{ $post->content() }}</p>
 						<hr>
-						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">Read more <span class="octicon octicon-chevron-right"></span></a></p>
+						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">{{{ $comments->count() }}} Comments <span class="octicon octicon-chevron-right"></span></a></p>
 					</div>
 				</div> <!-- .panel panel-default -->
 			@elseif ($post->video_src != "")
@@ -32,18 +32,18 @@
 					</div>
 					<div class="panel-footer">
 						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ String::title($post->title) }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
-						<p>{{ String::tidy(Str::limit($post->content, 200)) }}</p>
+						<p>{{ $post->content() }}</p>
 						<hr>
-						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">Read more <span class="octicon octicon-chevron-right"></span></a></p>
+						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">{{{ $comments->count() }}} Comments <span class="octicon octicon-chevron-right"></span></a></p>
 					</div>
 				</div> <!-- .panel panel-default -->
 			@else
 	    	<div class="panel panel-default">
 					<div class="panel-body">
 						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ String::title($post->title) }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
-						<p>{{ String::tidy(Str::limit($post->content, 200)) }}</p>
+						<p>{{ $post->content() }}</p>
 						<hr>
-						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">Read more <span class="octicon octicon-chevron-right"></span></a></p>
+						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">{{{ $comments->count() }}} Comments <span class="octicon octicon-chevron-right"></span></a></p>
 					</div>
 				</div> <!-- .panel panel-default -->
 			@endif
