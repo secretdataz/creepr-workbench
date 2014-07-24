@@ -89,13 +89,10 @@
 						<form  method="post" action="{{{ URL::to($post->slug) }}}">
 							<input type="hidden" name="_token" value="{{{ Session::getToken() }}}" />
 
-							<textarea class="form-control col-md-12 input-block-level" rows="4" name="comment" id="comment">{{{ Request::old('comment') }}}</textarea>
+							<textarea class="form-control" rows="4" name="comment" id="comment">{{{ Request::old('comment') }}}</textarea>
 
-							<div class="form-group">
-								<div class="col-md-12">
-									<input type="submit" class="btn btn-default" id="submit" value="Submit" />
-								</div>
-							</div>
+							<input type="submit" class="btn btn-default btn-lg btn-block" id="submit" value="Submit" />
+
 						</form>
 					@endif
 
