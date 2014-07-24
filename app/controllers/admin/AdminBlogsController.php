@@ -152,6 +152,8 @@ class AdminBlogsController extends AdminController {
             $post->meta_title       = Input::get('meta-title');
             $post->meta_description = Input::get('meta-description');
             $post->meta_keywords    = Input::get('meta-keywords');
+            $this->post->image_src  = Input::get('image-source');
+            $this->post->video_src  = Input::get('video-source');
 
             // Was the blog post updated?
             if($post->save())
