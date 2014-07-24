@@ -15,7 +15,7 @@
     		<div class="panel panel-default">
 					<div class="panel-body">
 						<div id="post-image">
-							<img src="{{ $post->image_src }}">
+							<img class="post-image-embed" src="{{ $post->image_src }}">
 						</div>
 					</div>
 					<div class="panel-footer">
@@ -25,17 +25,6 @@
 						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">Read more <span class="octicon octicon-chevron-right"></span></a></p>
 					</div>
 				</div> <!-- .panel panel-default -->
-				<script type="text/javascript">
-					(function() {
-						var img = document.getElementById('post-image').firstChild;
-						img.onload = function() {
-		  				if(img.height > img.width) {
-		      			img.height = '100%';
-		      			img.width = 'auto';
-		  				}
-						};
-					}());
-				</script>
 			@elseif ($post->video_src != "")
 	    	<div class="panel panel-default">
 					<div class="panel-body">

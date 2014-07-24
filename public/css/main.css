@@ -318,8 +318,9 @@ td {
     height: 100%;
 }
 
-.post-image {
-  
+.post-image-embed {
+  max-height:100%;
+  max-width:100%;
 }
 
 .panel-footer {
