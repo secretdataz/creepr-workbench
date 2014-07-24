@@ -29,6 +29,26 @@
 				</div>
 				<!-- ./ post title -->
 
+				<!-- Video Source -->
+				<div class="form-group">
+										<div class="col-md-12">
+												<label class="control-label" for="video-source">Video ID</label>
+						<input class="form-control" type="text" name="video-source" id="video-source" value="{{{ Input::old('video-source', isset($post) ? $post->video_source : null) }}}" />
+						{{{ $errors->first('video-source', '<span class="help-block">:message</span>') }}}
+					</div>
+				</div>
+				<!-- ./ video source -->
+
+				<!-- Image Source -->
+				<div class="form-group">
+										<div class="col-md-12">
+												<label class="control-label" for="image-source">Image URL</label>
+						<input class="form-control" type="text" name="image-source" id="image-source" value="{{{ Input::old('image-source', isset($post) ? $post->image_source : null) }}}" />
+						{{{ $errors->first('image-source', '<span class="help-block">:message</span>') }}}
+					</div>
+				</div>
+				<!-- ./ image source -->
+
 				<!-- Content -->
 				<div class="form-group {{{ $errors->has('content') ? 'has-error' : '' }}}">
 					<div class="col-md-12">

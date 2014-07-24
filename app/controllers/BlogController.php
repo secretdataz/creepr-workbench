@@ -117,7 +117,7 @@ class BlogController extends BaseController {
 			if($post->comments()->save($comment))
 			{
 				// Redirect to this blog post page
-				return Redirect::to($slug . '#comments')->with('success', 'Your comment was added with success.');
+				return Redirect::to($slug . '#comments')->with('success', 'Your comment was posted successfully.');
 			}
 
 			// Redirect to this blog post page

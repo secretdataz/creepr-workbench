@@ -79,6 +79,8 @@ class AdminBlogsController extends AdminController {
             $this->post->meta_title       = Input::get('meta-title');
             $this->post->meta_description = Input::get('meta-description');
             $this->post->meta_keywords    = Input::get('meta-keywords');
+            $this->post->image_src        = Input::get('image-source');
+            $this->post->video_src        = Input::get('video-source');
             $this->post->user_id          = $user->id;
 
             // Was the blog post created?
