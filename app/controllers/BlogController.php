@@ -36,7 +36,6 @@ class BlogController extends BaseController {
 	{
 		// Get all the blog posts
 		$posts = $this->post->orderBy('created_at', 'DESC')->paginate(10);
-    $comments = $posts->comments();
 
 
 		// Show the page
