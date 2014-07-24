@@ -17,7 +17,7 @@
 						<img src="{{ $post->image_src }}" width="720" style="max-width: 100%">
 					</div>
 					<div class="panel-footer">
-						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ String::title($post->title) }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
+						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ $post->title }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
 						<p>{{ $post->content() }}</p>
 						<hr>
 						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">Comment <span class="octicon octicon-chevron-right"></span></a></p>
@@ -31,7 +31,7 @@
 		      	</div>
 					</div>
 					<div class="panel-footer">
-						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ String::title($post->title) }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
+						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ $post->title }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
 						<p>{{ $post->content() }}</p>
 						<hr>
 						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">Comment <span class="octicon octicon-chevron-right"></span></a></p>
@@ -40,7 +40,7 @@
 			@else
 	    	<div class="panel panel-default">
 					<div class="panel-body">
-						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ String::title($post->title) }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
+						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ $post->title }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
 						<p>{{ $post->content() }}</p>
 						<hr>
 						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">Comment <span class="octicon octicon-chevron-right"></span></a></p>
