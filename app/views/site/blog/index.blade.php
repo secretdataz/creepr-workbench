@@ -14,7 +14,7 @@
 			@if ($post->image_src != "")
     		<div class="panel panel-default">
 					<div class="panel-body">
-						<div id="post-image">
+						<div id="post-image" style="background-image: url('{{ $post->image_src }}')">
 							<img class="post-image-embed" src="{{ $post->image_src }}">
 						</div>
 					</div>
