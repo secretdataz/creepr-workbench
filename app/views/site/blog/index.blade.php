@@ -15,7 +15,7 @@
     		<div class="panel panel-default">
 					<div class="panel-body">
 						<div class="video-container">
-							<img src="{{ $post->image_src }}" width="560" height="315">
+							<img src="{{ $post->image_src }}" width="720">
 						</div>
 					</div>
 					<div class="panel-footer">
@@ -29,7 +29,7 @@
 	    	<div class="panel panel-default">
 					<div class="panel-body">
 						<div class="video-container">
-		      		<iframe src="//www.youtube.com/embed/{{ $post->video_src }}" width="720" frameborder="0" allowfullscreen></iframe>
+		      		<iframe src="//www.youtube.com/embed/{{ $post->video_src }}" width="560" height="315" frameborder="0" allowfullscreen></iframe>
 		      	</div>
 					</div>
 					<div class="panel-footer">
