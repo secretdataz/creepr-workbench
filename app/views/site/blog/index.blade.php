@@ -14,7 +14,9 @@
 			@if ($post->image_src != "")
     		<div class="panel panel-default">
 					<div class="panel-body">
-						<img src="{{ $post->image_src }}">
+						<div id="post-image">
+							<img src="{{ $post->image_src }}">
+						</div>
 					</div>
 					<div class="panel-footer">
 						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ String::title($post->title) }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
@@ -23,6 +25,17 @@
 						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">Read more <span class="octicon octicon-chevron-right"></span></a></p>
 					</div>
 				</div> <!-- .panel panel-default -->
+				<script type="text/javascript">
+					(function() {
+						var img = document.getElementById('post-image').firstChild;
+						img.onload = function() {
+		  				if(img.height > img.width) {
+		      			img.height = '100%';
+		      			img.width = 'auto';
+		  				}
+						};
+					}());
+				</script>
 			@elseif ($post->video_src != "")
 	    	<div class="panel panel-default">
 					<div class="panel-body">
