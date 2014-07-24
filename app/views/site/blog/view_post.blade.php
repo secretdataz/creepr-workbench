@@ -64,8 +64,6 @@
 						</div>
 						<hr />
 						@endforeach
-					@else
-						<hr />
 					@endif
 
 					@if ( ! Auth::check())
@@ -90,8 +88,8 @@
 							<input type="hidden" name="_token" value="{{{ Session::getToken() }}}" />
 
 							<textarea class="form-control" rows="4" name="comment" id="comment">{{{ Request::old('comment') }}}</textarea>
-
-							<input type="submit" class="btn btn-default btn-lg btn-block" id="submit" value="Submit" />
+							<hr>
+							<input type="submit" class="btn btn-primary btn-lg btn-block" id="submit" value="Post Comment" />
 
 						</form>
 					@endif
