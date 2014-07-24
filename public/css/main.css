@@ -51,13 +51,13 @@ a {
 }
 
 .btn-default {
-  border: 2px solid rgba(190,190,190,1);
+  border: 2px solid rgba(190,190,190,0.5);
   color: #3c99fd;
   font-weight: bold;
 }
 
 .btn-default:hover, .btn-default:focus, .btn-default:active {
-  border: 2px solid rgba(63,196,25,1);
+  border: 2px solid #3c99fd;
   background-color: #3c99fd;
   color: #fff !important;
   text-decoration: none;
