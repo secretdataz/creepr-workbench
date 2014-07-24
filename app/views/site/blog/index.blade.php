@@ -14,9 +14,7 @@
 			@if ($post->image_src != "")
     		<div class="panel panel-default">
 					<div class="panel-body">
-						<div class="video-container">
-							<img src="{{ $post->image_src }}" width="720">
-						</div>
+						<img src="{{ $post->image_src }}" width="720" style="max-width: 100%">
 					</div>
 					<div class="panel-footer">
 						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ String::title($post->title) }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
