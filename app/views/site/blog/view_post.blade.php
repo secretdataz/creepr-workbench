@@ -55,7 +55,7 @@
 						@foreach ($comments as $comment)
 						<div class="row">
 							<div class="col-md-1">
-								<img class="thumbnail" src="http://placehold.it/36x36" alt="">
+								<img class="thumbnail" src="<?php echo 'https://minotar.net/helm/' . $comment->author->username . '/36.png'; ?>" alt="">
 							</div>
 							<div class="col-md-11">
 								<strong>{{{ $comment->author->username }}}</strong>&nbsp;&bull;&nbsp;{{{ $comment->date() }}}<br/>
