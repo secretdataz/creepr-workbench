@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => null,
+	'username' => 'a1fe6a48-f88a-47f5-9fe4-e52f11eb63d8',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,6 +93,6 @@ return array(
 	|
 	*/
 
-	'password' => null,
+	'password' => 'a1fe6a48-f88a-47f5-9fe4-e52f11eb63d8',
 
 );
