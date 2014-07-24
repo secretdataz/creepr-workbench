@@ -38,6 +38,15 @@
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<div class="page-header"><h2 class="panel-heading">{{ $post->title }} &nbsp;<small>Posted {{{ $post->date() }}}</small></h2></div>
+					@if ($post->image_src != "")
+						<img src="{{ $post->image_src }}" width="720" style="max-width: 100%">
+						<hr>
+					@elseif ($post->video_src != "")
+						<div class="video-container">
+							<iframe src="//www.youtube.com/embed/{{ $post->video_src }}" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<hr>
+					@endif
 					<p>{{ $post->content() }}</p>
 				</div>
 				<div class="panel-footer">
@@ -80,7 +89,7 @@
 						<form  method="post" action="{{{ URL::to($post->slug) }}}">
 							<input type="hidden" name="_token" value="{{{ Session::getToken() }}}" />
 
-							<textarea class="col-md-12 input-block-level" rows="4" name="comment" id="comment">{{{ Request::old('comment') }}}</textarea>
+							<textarea class="form-control col-md-12 input-block-level" rows="4" name="comment" id="comment">{{{ Request::old('comment') }}}</textarea>
 
 							<div class="form-group">
 								<div class="col-md-12">
@@ -89,7 +98,7 @@
 							</div>
 						</form>
 					@endif
-					
+
 				</div>
 			</div> <!-- .panel panel-default -->
 	</div> <!-- .col-md-8 -->
