@@ -19,6 +19,14 @@
     font-family: 'socicon' !important;
 }
 
+.jumbotron {
+  background-color: #fff;
+  box-shadow: 0px 1px 0px rgba(0,0,0,.15);
+  background-image: url('http://i.imgur.com/75sQKyB.png');
+  background-size: auto;
+  background-position: 50px 0px;
+}
+
 body {
   background-color: #3c99fd;
   font-family: 'Oxygen', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;

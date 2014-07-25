@@ -14,4 +14,12 @@ class PageController extends BaseController {
     return View::make('site/contribute');
   }
 
+  public function server() {
+    return View::make('site/server');
+  }
+
+  public function jobs() {
+    return View::make('site/jobs');
+  }
+
 }

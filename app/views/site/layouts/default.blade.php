@@ -46,8 +46,8 @@
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="octicon octicon-home"></span>&nbsp; About <span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu">
                         <li><a href="/cast"><span class="octicon octicon-organization"></span>&nbsp; Cast</a></li>
-                        <li><a href="#"><span class="octicon octicon-database"></span>&nbsp; Server</a></li>
-                        <li><a href="#"><span class="octicon octicon-gist-secret"></span>&nbsp; Jobs</a></li>
+                        <li><a href="/server"><span class="octicon octicon-database"></span>&nbsp; Server</a></li>
+                        <li><a href="/jobs"><span class="octicon octicon-gist-secret"></span>&nbsp; Jobs</a></li>
                         <li class="divider"></li>
                         <li><a href="/contribute" class="contribute-link"><span class="octicon octicon-heart"></span>&nbsp; Contribute</a></li>
                       </ul>

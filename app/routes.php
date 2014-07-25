@@ -108,6 +108,8 @@ Route::get('contact-us', function()
 Route::get('cast', 'PageController@cast');
 Route::get('content', 'PageController@content');
 Route::get('contribute', 'PageController@contribute');
+Route::get('server', 'PageController@server');
+Route::get('jobs', 'PageController@jobs');
 
 # Posts - Second to last set, match slug
 Route::get('{postSlug}', 'BlogController@getView');
