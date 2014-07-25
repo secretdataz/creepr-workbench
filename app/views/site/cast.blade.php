@@ -90,9 +90,8 @@
         </div>
 
       </div>
-    </div>
   </div>
-
+</div>
 </div> <!-- .row -->
 
 @stop
