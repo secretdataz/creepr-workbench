@@ -27,6 +27,20 @@ body {
   color: #555;
 }
 
+.profile {
+  background-color: rgba(0,0,0,.1) !important;
+  text-align: center;
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  margin-bottom: 10px;
+  border: 3px solid #fff;
+  border-radius: 3px;
+}
+
 a {
   color: #3c99fd;
 }
