@@ -13,7 +13,7 @@
     <div class="panel panel-default">
       <div class="panel-body">
         <div class="page-header"><h3 class="panel-heading">Meet the Cast</h3></div>
-        <h4>Administrators</h4>
+        <h4>Season 1</h4>
         <div class="row">
           <div class="col-md-3">
             <div class="profile">
@@ -53,12 +53,6 @@
               <p>Mike</p>
             </div>
           </div>
-        </div>
-
-        <hr>
-
-        <h4>Moderators</h4>
-        <div class="row">
           <div class="col-md-3">
             <div class="profile">
               <img class="profile-pic" src="https://minotar.net/helm/DJ_Flapjack/100.png"><br>
@@ -80,6 +74,9 @@
               <p>Andy</p>
             </div>
           </div>
+        </div>
+
+        <div class="row">
           <div class="col-md-3">
             <div class="profile">
               <img class="profile-pic" src="https://minotar.net/helm/KylerHolland/100.png"><br>
@@ -87,11 +84,17 @@
               <p>Kyler</p>
             </div>
           </div>
+          <div class="col-md-3">
+            <div class="profile">
+              <img class="profile-pic" src="https://minotar.net/helm/caffinatedkid/100.png"><br>
+              <strong>caffinatedkid</strong>
+              <p>Julia</p>
+            </div>
+          </div>
         </div>
-
-      </div>
-  </div>
-</div>
+      </div> <!-- .panel-body -->
+    </div> <!-- .panel panel-default -->
+  </div> <!-- .col-md-8 -->
 </div> <!-- .row -->
 
 @stop
