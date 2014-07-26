@@ -57,7 +57,7 @@ return array(
 			'host'      => '66.85.144.162',
 			'database'  => 'mcph222605',
 			'username'  => 'mcph222605',
-			'password'  => 'ee2e22186b',
+			'password'  => 'baadedfd87',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
