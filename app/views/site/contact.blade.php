@@ -15,19 +15,32 @@
         <div class="page-header"><h3 class="panel-heading">Contact Us</h3></div>
         <form action="/contact" method="POST">
           @if (Auth::check())
+
+            <ul class="errors">
+                @foreach($errors->all('<li>:message</li>') as $message)
+                {{ $message }}
+                @endforeach
+            </ul>
+
             <div class="form-group">
               <label for="username">Username</label>
-              <input type="text" class="form-control input-lg" id="username" value="{{{ Auth::user()->username }}}" disabled>
+              <input type="text" class="form-control input-lg" id="username" name="username" value="{{{ Auth::user()->username }}}">
+            </div>
+            <div class="form-group">
+              <label for="subject">E-mail Address</label>
+              <input type="email" class="form-control input-lg" id="email" name="email" value="{{{ Auth::user()->email }}}">
             </div>
             <div class="form-group">
               <label for="subject">Subject</label>
-              <input type="text" class="form-control input-lg" id="subject" placeholder="How can we help?">
+              <input type="text" class="form-control input-lg" id="subject" name="subject" placeholder="How can we help?">
             </div>
             <div class="form-group">
-              <label for="response">Message</label>
-              <textarea class="form-control input-lg" id="response" rows="3"></textarea>
+              <label for="message">Message</label>
+              <textarea class="form-control input-lg" id="message" name="message" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
+
+
           @else
             <div class="content-box">
               <h4 class="page-header">Oops!</h4>

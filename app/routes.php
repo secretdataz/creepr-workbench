@@ -107,31 +107,28 @@ Route::get('contact-us', function()
 
 Route::get('staff', 'PageController@staff');
 Route::get('donate', 'PageController@donate');
-// Route::get('contact', 'PageController@contact');
-//
-// Route::post('contact', function() {
-//
-//     $fromName = Input::get('username');
-//     $subject = Input::get('subject');
-//     $data = Input::get('response');
-//     $data = array( 'response' => Input::get('response') );
-//     $toEmail = 'connect@creepr.co';
-//     $toName = 'The Creepr Network';
-//
-//     Mail::send('emails.contact', $data, function($message) use ($fromName) {
-//
-//       $message->to('s-roth@onu.edu', 'The Creepr Network')->subject('Creepr Support');
-//       $message->from('connect@creepr.co', $fromName);
-//
-//     });
-// 
-// });
+Route::get('contact', 'PageController@contact');
 
-//Contact Page
-Route::get('contact', 'ContactController@getContact');
+Route::post('contact', function() {
 
-//Form request:: POST action will trigger to controller
-Route::post('contact_request','ContactController@getContactUsForm');
+    $data = Input::all();
+
+    Mail::send('emails.contact', $data, function($message) use($data)
+    {
+      $message->from($data['email'] , $data['username']);
+      $message->to('connect@creepr.co', 'The Creepr Network')->subject('Creepr Support Request');
+
+    });
+
+    return View::make('site/contact');
+
+});
+
+// //Contact Page
+// Route::get('contact', 'ContactController@getContact');
+//
+// //Form request:: POST action will trigger to controller
+// Route::post('contact_request','ContactController@getContactUsForm');
 
 Route::get('legal', 'PageController@legal');
 
