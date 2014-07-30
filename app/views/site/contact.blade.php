@@ -35,8 +35,8 @@
               <input type="text" class="form-control input-lg" id="subject" name="subject" placeholder="How can we help?">
             </div>
             <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control input-lg" id="message" name="message" rows="3"></textarea>
+              <label for="response">Message</label>
+              <textarea class="form-control input-lg" id="response" name="response" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
 
