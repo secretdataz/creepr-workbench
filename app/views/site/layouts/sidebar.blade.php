@@ -15,7 +15,7 @@
   </div>
 </div>
 
-<div class="panel panel-default">
+<!-- <div class="panel panel-default">
   <div class="panel-body">
     <div class="page-header"><h4 class="panel-heading">Creepr TV</h4></div>
     <p>Season 1 begins <strong>September 2nd!</strong> Check back here for the latest news regarding the cast and world types.</p>
@@ -42,4 +42,4 @@
     <hr>
     <a class="btn btn-info btn-lg btn-block" href="#">See Full Schedule <span class="octicon octicon-chevron-right"></span></a>
   </div>
-</div>
+</div> -->

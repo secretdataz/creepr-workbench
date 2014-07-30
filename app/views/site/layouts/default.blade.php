@@ -42,32 +42,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="octicon octicon-home"></span>&nbsp; About <span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="/cast"><span class="octicon octicon-organization"></span>&nbsp; Cast</a></li>
-                        <li><a href="/server"><span class="octicon octicon-database"></span>&nbsp; Server</a></li>
-                        <li><a href="/jobs"><span class="octicon octicon-gist-secret"></span>&nbsp; Jobs</a></li>
-                        <li class="divider"></li>
-                        <li><a href="/contribute" class="contribute-link"><span class="octicon octicon-heart"></span>&nbsp; Contribute</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="/content" class="dropdown-toggle" data-toggle="dropdown"><span class="octicon octicon-device-camera-video"></span>&nbsp; Content <span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#"><span class="octicon octicon-device-desktop"></span>&nbsp; Videos</a></li>
-                        <li><a href="#"><span class="octicon octicon-broadcast"></span>&nbsp; Podcasts</a></li>
-                        <li><a href="#"><span class="octicon octicon-gift"></span>&nbsp; Merchandise</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="octicon octicon-megaphone"></span>&nbsp; Community <span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#"><span class="octicon octicon-comment-discussion"></span>&nbsp; Forums</a></li>
-                        <li><a href="#"><span class="socicon">r</span>&nbsp; YouTube</a></li>
-                        <li><a href="#"><span class="socicon">a</span>&nbsp; Twitter</a></li>
-                      </ul>
-                    </li>
+                  <li><a href="/staff"><span class="octicon octicon-organization"></span>&nbsp; Staff</a></li>
+                  <li><a href="/donate"><span class="octicon octicon-heart"></span>&nbsp; Donate</a></li>
+                  <li><a href="/contact"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp; Contact</a></li>
 										@if (Auth::check())
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?php echo 'https://minotar.net/helm/' . Auth::user()->username . '/16.png'; ?>">&nbsp; {{{ Auth::user()->username }}} <span class="caret"></span></a>

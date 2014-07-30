@@ -105,11 +105,37 @@ Route::get('contact-us', function()
 
 //:: Page Routes::
 
-Route::get('cast', 'PageController@cast');
-Route::get('content', 'PageController@content');
-Route::get('contribute', 'PageController@contribute');
-Route::get('server', 'PageController@server');
-Route::get('jobs', 'PageController@jobs');
+Route::get('staff', 'PageController@staff');
+Route::get('donate', 'PageController@donate');
+// Route::get('contact', 'PageController@contact');
+//
+// Route::post('contact', function() {
+//
+//     $fromName = Input::get('username');
+//     $subject = Input::get('subject');
+//     $data = Input::get('response');
+//     $data = array( 'response' => Input::get('response') );
+//     $toEmail = 'connect@creepr.co';
+//     $toName = 'The Creepr Network';
+//
+//     Mail::send('emails.contact', $data, function($message) use ($fromName) {
+//
+//       $message->to('s-roth@onu.edu', 'The Creepr Network')->subject('Creepr Support');
+//       $message->from('connect@creepr.co', $fromName);
+//
+//     });
+// 
+// });
+
+//Contact Page
+Route::get('contact', 'ContactController@getContact');
+
+//Form request:: POST action will trigger to controller
+Route::post('contact_request','ContactController@getContactUsForm');
+
+Route::get('legal', 'PageController@legal');
+
+
 
 # Posts - Second to last set, match slug
 Route::get('{postSlug}', 'BlogController@getView');
