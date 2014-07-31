@@ -111,11 +111,23 @@ Route::get('contact', 'PageController@contact');
 
 Route::post('contact', function() {
 
-    $data = Input::all();
+    $request = array(
+      'username'  => Input::get('username'),
+      'email'     => Input::get('email'),
+      'subject'   => Input::get('subject'),
+      'response'  => Input::get('response'),
+    );
 
-    Mail::send('emails.contact', $data, function($message) use($data)
+    $data = array(
+      'username'  => Input::get('username'),
+      'email'     => Input::get('email'),
+      'subject'   => Input::get('subject'),
+      'response'  => Input::get('response'),
+    );
+
+    Mail::send('emails.contact', $data, function($message) use($request)
     {
-      $message->from($data['email'] , $data['username']);
+      $message->from($request['email'] , $request['username']);
       $message->to('connect@creepr.co', 'The Creepr Network')->subject('Creepr Support Request');
 
     });

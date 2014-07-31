@@ -24,11 +24,11 @@
 
             <div class="form-group">
               <label for="username">Username</label>
-              <input type="text" class="form-control input-lg" id="username" name="username" value="{{{ Auth::user()->username }}}">
+              <input type="text" class="form-control input-lg" id="username" name="username" value="{{ Auth::user()->username }}">
             </div>
             <div class="form-group">
               <label for="subject">E-mail Address</label>
-              <input type="email" class="form-control input-lg" id="email" name="email" value="{{{ Auth::user()->email }}}">
+              <input type="email" class="form-control input-lg" id="email" name="email" value="{{ Auth::user()->email }}">
             </div>
             <div class="form-group">
               <label for="subject">Subject</label>
