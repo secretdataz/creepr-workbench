@@ -13,8 +13,8 @@
     <div class="panel panel-default">
       <div class="panel-body">
         <div class="page-header"><h3 class="panel-heading">Contact Us</h3></div>
-        <form action="/contact" method="POST">
-          @if (Auth::check())
+        @if (Auth::check())
+          {{ Form::open(array('url' => 'contact')) }}
 
             <ul class="errors">
                 @foreach($errors->all('<li>:message</li>') as $message)
@@ -39,15 +39,14 @@
               <textarea class="form-control input-lg" id="response" name="response" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
+          {{ Form::close() }}
 
-
-          @else
-            <div class="content-box">
-              <h4 class="page-header">Oops!</h4>
-              You need to be signed in to submit an e-mail to us.
-            </div>
-          @endif
-        </form>
+        @else
+          <div class="content-box">
+            <h4 class="page-header">Oops!</h4>
+            You need to be signed in to submit an e-mail to us.
+          </div>
+        @endif
       </div> <!-- .panel-body -->
     </div> <!-- .panel panel-default -->
   </div> <!-- .col-md-8 -->
