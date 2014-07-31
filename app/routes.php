@@ -109,26 +109,21 @@ Route::get('staff', 'PageController@staff');
 Route::get('donate', 'PageController@donate');
 Route::get('contact', 'PageController@contact');
 
-Route::POST('contact', function() {
+Route::post('contact', function() {
 
-    $request = array(
+    $data = array(
       'username'  => Input::get('username'),
       'email'     => Input::get('email'),
       'subject'   => Input::get('subject'),
-      'response'  => Input::get('response'),
+      'response'  => Input::get('response')
     );
 
-    $data = array(
-      'username'  => $request['username'],
-      'email'     => $request['email'],
-      'subject'   => $request['subject'],
-      'response'  => $request['response'],
-    );
+    // dd($data);
 
-    Mail::send('emails.contact', $data, function($message) use($request)
+    Mail::send('emails.contact', $data, function($message) use($data)
     {
-      $message->from($request['email'], $request['username']);
-      $message->to('connect@creepr.co', 'The Creepr Network')->subject('Creepr Support Request');
+      $message->from($data['email'], $data['username']);
+      $message->to('s-roth@onu.edu', 'The Creepr Network')->subject('Creepr Support Request');
 
     });
 

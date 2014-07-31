@@ -14,7 +14,7 @@
       <div class="panel-body">
         <div class="page-header"><h3 class="panel-heading">Contact Us</h3></div>
         @if (Auth::check())
-          {{ Form::open(array('url' => 'contact')) }}
+          <form method="POST" action="{{{ URL::to('/contact') }}}" accept-charset="UTF-8">
 
             <ul class="errors">
                 @foreach($errors->all('<li>:message</li>') as $message)
@@ -39,7 +39,7 @@
               <textarea class="form-control input-lg" id="response" name="response" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
-          {{ Form::close() }}
+          </form>
 
         @else
           <div class="content-box">
