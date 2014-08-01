@@ -123,7 +123,7 @@ Route::post('contact', function() {
     Mail::send('emails.contact', $data, function($message) use($data)
     {
       // $message->from('connect@creepr.co', $data['username']);
-      $message->to('b45d5e400afc6be928e545a7caa8454c@inbound.postmarkapp.com', 'The Creepr Network')->subject('Creepr Support Request');
+      $message->to('connect@creepr.co', 'The Creepr Network')->subject('Creepr Support Request');
 
     });
 
