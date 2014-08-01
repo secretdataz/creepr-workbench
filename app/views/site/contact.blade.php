@@ -31,7 +31,7 @@
 
             <div class="form-group">
               <label for="username">Username</label>
-              <input type="text" class="form-control input-lg" id="username" name="username" value="{{ Auth::user()->username }}" disabled>
+              <input type="text" class="form-control input-lg" id="username" name="username" value="{{ Auth::user()->username }}">
             </div>
             <div class="form-group">
               <label for="subject">E-mail Address</label>
