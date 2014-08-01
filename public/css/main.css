@@ -19,6 +19,12 @@
     font-family: 'socicon' !important;
 }
 
+.alert-success-panel {
+  border: 2px solid rgba(63,196,25,1);
+  background-color: rgba(63,196,25,0.1);
+  color: rgba(63,196,25,1);
+}
+
 .jumbotron {
   background-color: #fff;
   box-shadow: 0px 1px 0px rgba(0,0,0,.15);

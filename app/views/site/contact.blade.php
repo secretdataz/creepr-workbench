@@ -22,13 +22,16 @@
                 @endforeach
             </ul>
 
-            @if(Session::has('message'))
-              <div>{{Session::get('message')</div>
+            @if (Session::has('message'))
+              <div class="alert alert-success alert-success-panel alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <strong><span class="octicon octicon-check"></span>&nbsp; Success!</strong> {{ Session::get('message') }}
+              </div>
             @endif
 
             <div class="form-group">
               <label for="username">Username</label>
-              <input type="text" class="form-control input-lg" id="username" name="username" value="{{ Auth::user()->username }}">
+              <input type="text" class="form-control input-lg" id="username" name="username" value="{{ Auth::user()->username }}" disabled>
             </div>
             <div class="form-group">
               <label for="subject">E-mail Address</label>
