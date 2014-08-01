@@ -22,6 +22,10 @@
                 @endforeach
             </ul>
 
+            @if(Session::has('message'))
+              <div>{{Session::get('message')</div>
+            @endif
+
             <div class="form-group">
               <label for="username">Username</label>
               <input type="text" class="form-control input-lg" id="username" name="username" value="{{ Auth::user()->username }}">

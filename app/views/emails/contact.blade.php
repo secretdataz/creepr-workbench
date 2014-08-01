@@ -6,7 +6,7 @@
   <body>
     <h4>Message from {{ $username }}</h4>
     <p class="lead">{{ $subject }}</p>
-    <br>
+		<p>{{ $email }}</p>
     <p>{{ $response }}</p>
   </body>
 </html>
