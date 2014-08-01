@@ -122,8 +122,8 @@ Route::post('contact', function() {
 
     Mail::send('emails.contact', $data, function($message) use($data)
     {
-      $message->from($data['email'], $data['username']);
-      $message->to('s-roth@onu.edu', 'The Creepr Network')->subject('Creepr Support Request');
+      // $message->from('connect@creepr.co', $data['username']);
+      $message->to('connect@creepr.co', 'The Creepr Network')->subject('Creepr Support Request');
 
     });
 
