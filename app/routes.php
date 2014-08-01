@@ -127,7 +127,7 @@ Route::post('contact', function() {
 
     });
 
-    Session::flash('message', 'Your message has been sent. We will get back to you as soon as possible.')
+    Session::flash('message', 'Your message has been sent. We will get back to you as soon as possible.');
     return View::make('site/contact');
 
 });
