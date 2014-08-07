@@ -15,31 +15,55 @@
   </div>
 </div>
 
-<!-- <div class="panel panel-default">
+<div class="panel panel-default">
   <div class="panel-body">
-    <div class="page-header"><h4 class="panel-heading">Creepr TV</h4></div>
-    <p>Season 1 begins <strong>September 2nd!</strong> Check back here for the latest news regarding the cast and world types.</p>
+    <div class="page-header"><h4 class="panel-heading">Game Modes</h4></div>
+    <p>We are always working on adding unique new experiences to the Creepr server.</p>
     <hr>
     <div class="media">
       <a class="pull-left" href="#">
-        <img class="media-object" src="http://i.imgur.com/NNYL8El.png" alt="Creepr Skyblock">
+        <img class="media-object" src="http://i.imgur.com/CwA7ddU.png" alt="Survival">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Survival</h4>
+        <p>Vanilla Minecraft. Protect yourself from monsters and other players.</p>
+      </div>
+    </div>
+    <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object" src="http://i.imgur.com/smKrUP2.png" alt="Creative">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Creative</h4>
+        <p>Limitless building opportunity. Let your imagination run free here.</p>
+      </div>
+    </div>
+    <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object" src="http://i.imgur.com/NNYL8El.png" alt="Skyblock">
       </a>
       <div class="media-body">
         <h4 class="media-heading">Skyblock</h4>
-        <p>Survival with strictly limited resources, featuring the cast on the <strong>GotPVP</strong> server.</p>
+        <p>Survival with strictly limited resources and challenges to complete.</p>
       </div>
     </div>
-    <hr>
     <div class="media">
       <a class="pull-left" href="#">
-        <img class="media-object" src="http://i.imgur.com/DRfXbrp.png" alt="Creepr Super Hardcore">
+        <img class="media-object" src="http://i.imgur.com/DRfXbrp.png" alt="Hardcore">
       </a>
       <div class="media-body">
-        <h4 class="media-heading">Super Hardcore</h4>
-        <p><strong>Every man for himself.</strong> Last one standing wins eternal glory.</p>
+        <h4 class="media-heading">Hardcore</h4>
+        <p>Here, it is every man for himself. Dying will result in a temporary ban.</p>
       </div>
     </div>
-    <hr>
-    <a class="btn btn-info btn-lg btn-block" href="#">See Full Schedule <span class="octicon octicon-chevron-right"></span></a>
+    <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object" src="http://i.imgur.com/2SFs36W.png" alt="Apocalypse">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Apocalypse <span class="badge">New!</span></h4>
+        <p>Run through the ruins of Creepr City and battle against powerful zombie hordes.</p>
+      </div>
+    </div>
   </div>
-</div> -->
+</div>
