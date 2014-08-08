@@ -62,7 +62,7 @@
       </a>
       <div class="media-body">
         <h4 class="media-heading">The Blocking Dead <span class="badge">New!</span></h4>
-        <p>Run through the ruins of Creepr City and battle against powerful zombie hordes.</p>
+        <p>Run through the ruins of Blockopolis and battle against powerful zombie hordes.</p>
       </div>
     </div>
   </div>
