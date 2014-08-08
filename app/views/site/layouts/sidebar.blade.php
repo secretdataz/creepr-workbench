@@ -22,7 +22,7 @@
     <hr>
     <div class="media">
       <a class="pull-left" href="#">
-        <img class="media-object" src="http://i.imgur.com/CwA7ddU.png" alt="Survival">
+        <img class="media-object" src="http://i.imgur.com/R9J0x2v.png" width="64px" alt="Survival">
       </a>
       <div class="media-body">
         <h4 class="media-heading">Survival</h4>
@@ -31,7 +31,7 @@
     </div>
     <div class="media">
       <a class="pull-left" href="#">
-        <img class="media-object" src="http://i.imgur.com/smKrUP2.png" alt="Creative">
+        <img class="media-object" src="http://i.imgur.com/iZGe7pd.png" width="64px" alt="Creative">
       </a>
       <div class="media-body">
         <h4 class="media-heading">Creative</h4>
@@ -40,7 +40,7 @@
     </div>
     <div class="media">
       <a class="pull-left" href="#">
-        <img class="media-object" src="http://i.imgur.com/NNYL8El.png" alt="Skyblock">
+        <img class="media-object" src="http://i.imgur.com/Fle0IEB.png" width="64px"  alt="Skyblock">
       </a>
       <div class="media-body">
         <h4 class="media-heading">Skyblock</h4>
@@ -49,7 +49,7 @@
     </div>
     <div class="media">
       <a class="pull-left" href="#">
-        <img class="media-object" src="http://i.imgur.com/DRfXbrp.png" alt="Hardcore">
+        <img class="media-object" src="http://i.imgur.com/KTbVolb.png" width="64px" alt="Hardcore">
       </a>
       <div class="media-body">
         <h4 class="media-heading">Hardcore</h4>
@@ -58,10 +58,10 @@
     </div>
     <div class="media">
       <a class="pull-left" href="#">
-        <img class="media-object" src="http://i.imgur.com/2SFs36W.png" alt="Apocalypse">
+        <img class="media-object" src="http://i.imgur.com/5YMRiaG.png" width="64px" alt="Apocalypse">
       </a>
       <div class="media-body">
-        <h4 class="media-heading">Apocalypse <span class="badge">New!</span></h4>
+        <h4 class="media-heading">The Blocking Dead <span class="badge">New!</span></h4>
         <p>Run through the ruins of Creepr City and battle against powerful zombie hordes.</p>
       </div>
     </div>
