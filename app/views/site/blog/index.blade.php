@@ -12,6 +12,7 @@
 	<div class="col-md-8">
 		@foreach ($posts as $post)
 			@if ($post->image_src != "")
+
     		<div class="panel panel-default">
 					<div class="panel-body">
 						<img src="{{ $post->image_src }}" width="720" style="max-width: 100%">
@@ -20,15 +21,12 @@
 						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ $post->title }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
 						<p>{{ $post->content() }}</p>
 						<hr>
-						<p>
-							<a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">
-								{{{ $post->comments->count() }}} Comments
-								<span class="octicon octicon-chevron-right"></span>
-							</a>
-						</p>
+						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}"><span class="ion-chatbubbles"></span> &nbsp;{{{ $post->comments->count() }}} Comments</a></p>
 					</div>
 				</div> <!-- .panel panel-default -->
+
 			@elseif ($post->video_src != "")
+
 	    	<div class="panel panel-default">
 					<div class="panel-body">
 						<div class="video-container">
@@ -39,16 +37,18 @@
 						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ $post->title }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
 						<p>{{ $post->content() }}</p>
 						<hr>
-						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">{{{ $post->comments->count() }}} Comments <span class="octicon octicon-chevron-right"></span></a></p>
+						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}"><span class="ion-chatbubbles"></span> &nbsp;{{{ $post->comments->count() }}} Comments</a></p>
 					</div>
 				</div> <!-- .panel panel-default -->
+
 			@else
+
 	    	<div class="panel panel-default">
 					<div class="panel-body">
 						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ $post->title }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
 						<p>{{ $post->content() }}</p>
 						<hr>
-						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">{{{ $post->comments->count() }}} Comments <span class="octicon octicon-chevron-right"></span></a></p>
+						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}"><span class="ion-chatbubbles"></span> &nbsp;{{{ $post->comments->count() }}} Comments</a></p>
 					</div>
 				</div> <!-- .panel panel-default -->
 			@endif
