@@ -20,7 +20,12 @@
 						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ $post->title }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
 						<p>{{ $post->content() }}</p>
 						<hr>
-						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">Comment <span class="octicon octicon-chevron-right"></span></a></p>
+						<p>
+							<a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">
+								{{{ $post->comments->count() }}} Comments
+								<span class="octicon octicon-chevron-right"></span>
+							</a>
+						</p>
 					</div>
 				</div> <!-- .panel panel-default -->
 			@elseif ($post->video_src != "")
@@ -34,7 +39,7 @@
 						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ $post->title }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
 						<p>{{ $post->content() }}</p>
 						<hr>
-						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">Comment <span class="octicon octicon-chevron-right"></span></a></p>
+						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">{{{ $post->comments->count() }}} Comments <span class="octicon octicon-chevron-right"></span></a></p>
 					</div>
 				</div> <!-- .panel panel-default -->
 			@else
@@ -43,7 +48,7 @@
 						<h3 class="page-header"><a href="{{{ $post->url() }}}" class="post-title">{{ $post->title }}</a> <small>Posted {{{ $post->date() }}}</small></h3>
 						<p>{{ $post->content() }}</p>
 						<hr>
-						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">Comment <span class="octicon octicon-chevron-right"></span></a></p>
+						<p><a class="btn btn-default btn-lg" href="{{{ $post->url() }}}">{{{ $post->comments->count() }}} Comments <span class="octicon octicon-chevron-right"></span></a></p>
 					</div>
 				</div> <!-- .panel panel-default -->
 			@endif
