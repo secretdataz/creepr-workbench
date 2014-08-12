@@ -70,7 +70,7 @@
         <img class="media-object" src="http://i.imgur.com/nvWZljV.png" width="64px" alt="Pixelmon">
       </a>
       <div class="media-body">
-        <h4 class="media-heading">Pixelmon <span class="badge">New!</span></h4>
+        <h4 class="media-heading">Pixelmon <span class="badge">Soon!</span></h4>
         <p>Train a team of Pokemon and battle against other trainers and gym leaders.</p>
       </div>
     </div>
