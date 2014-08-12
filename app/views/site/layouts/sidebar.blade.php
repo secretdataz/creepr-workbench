@@ -58,11 +58,20 @@
     </div>
     <div class="media">
       <a class="pull-left" href="#">
-        <img class="media-object" src="http://i.imgur.com/5YMRiaG.png" width="64px" alt="Apocalypse">
+        <img class="media-object" src="http://i.imgur.com/5YMRiaG.png" width="64px" alt="The Blocking Dead">
       </a>
       <div class="media-body">
         <h4 class="media-heading">The Blocking Dead <span class="badge">New!</span></h4>
         <p>Run through the ruins of Blockopolis and battle against powerful zombie hordes.</p>
+      </div>
+    </div>
+    <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object" src="http://i.imgur.com/nvWZljV.png" width="64px" alt="Pixelmon">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Pixelmon <span class="badge">New!</span></h4>
+        <p>Train a team of Pokemon and battle against other trainers and gym leaders.</p>
       </div>
     </div>
   </div>
