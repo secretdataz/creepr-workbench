@@ -76,11 +76,11 @@
     </div>
     <div class="media">
       <a class="pull-left" href="#">
-        <img class="media-object" src="http://i.imgur.com/3mS6xLa.png" width="64px" alt="Arcade">
+        <img class="media-object" src="http://i.imgur.com/LeCRngW.png" width="64px" alt="Arcade">
       </a>
       <div class="media-body">
         <h4 class="media-heading">Arcade <span class="badge">Soon!</span></h4>
-        <p>Compete against others in various mini-games. Mafia, Capture the Flag, and many more.</p>
+        <p>Compete against others in various mini-games. Mafia, Capture the Flag, and more.</p>
       </div>
     </div>
   </div>
