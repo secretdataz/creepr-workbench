@@ -76,6 +76,15 @@
     </div>
     <div class="media">
       <a class="pull-left" href="#">
+        <img class="media-object" src="http://i.imgur.com/OSlooNt.png" width="64px" alt="Arcade">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Factions <span class="badge">Soon!</span></h4>
+        <p>Team up with your friends, then battle against other clans to establish dominance!</p>
+      </div>
+    </div>
+    <div class="media">
+      <a class="pull-left" href="#">
         <img class="media-object" src="http://i.imgur.com/LeCRngW.png" width="64px" alt="Arcade">
       </a>
       <div class="media-body">
