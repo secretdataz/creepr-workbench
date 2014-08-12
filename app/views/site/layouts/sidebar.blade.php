@@ -80,7 +80,7 @@
       </a>
       <div class="media-body">
         <h4 class="media-heading">Factions <span class="badge">Soon!</span></h4>
-        <p>Team up with your friends, then battle against other clans to establish dominance!</p>
+        <p>Form a guild with your friends and battle for superiority!</p>
       </div>
     </div>
     <div class="media">
