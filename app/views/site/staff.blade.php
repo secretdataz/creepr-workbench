@@ -54,9 +54,9 @@
           </div>
           <div class="col-md-3">
             <div class="profile">
-              <img class="profile-pic" src="https://minotar.net/helm/DJ_Flapjack/100.png"><br>
-              <strong>DJ_Flapjack</strong>
-              <p>Daret</p>
+              <img class="profile-pic" src="https://minotar.net/helm/gr4vey4rd/100.png"><br>
+              <strong>gr4vey4rd</strong>
+              <p>Kevin</p>
             </div>
           </div>
           <div class="col-md-3">
