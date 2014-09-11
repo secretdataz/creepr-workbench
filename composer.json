@@ -1,12 +1,16 @@
 {
-    "name": "andrew13/Laravel-4-Bootstrap-Starter-Site",
-    "description": "Laravel 4 Starter Site",
-    "keywords": ["laravel", "Starter Site"],
+    "name": "creepr/creepr-workbench,
+    "description": "Creepr Workbench",
+    "keywords": ["minecraft", "starter ite"],
     "license": "MIT",
     "authors": [
         {
             "name": "Andrew Elkins",
             "homepage": "http://www.andrewelkins.com"
+        },
+        {
+            "name": "Samuel Roth",
+            "homepage": "http://www.sjr.io"
         }
     ],
     "require": {
