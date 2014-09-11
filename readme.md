@@ -1,5 +1,5 @@
 Creepr Workbench
-----------------
+================
 
 A starter site for a Minecraft server.
 
@@ -8,7 +8,7 @@ A starter site for a Minecraft server.
 - Built on Bootstrap and the Laravel PHP framework;
 
 Getting Started
-===============
+---------------
 
 Laravel is a PHP web application framework that utilizes the model-view-controller design pattern to facilitate tasks to different parts of the application. The models correlate to data stored in a database (MySQL, PostgreSQL, or otherwise). The controllers interact with data from the models and pass this data, manipulated or otherwise, to the views. Views are HTML files that have code which compiles to straightforward PHP. 
 
