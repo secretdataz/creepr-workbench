@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => '66.85.144.162',
-			'database'  => 'mcph222605',
-			'username'  => 'mcph222605',
-			'password'  => 'baadedfd87',
+			'host'      => '',
+			'database'  => '',
+			'username'  => '',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -65,10 +65,10 @@ return array(
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
-			'host'     => 'ec2-54-204-2-217.compute-1.amazonaws.com',
-			'database' => 'd82e6icb2uo8tm',
-			'username' => 'hmarivlmhzvfbe',
-			'password' => '3s7a8W8UDgYIVx2NC9GCZheQpc',
+			'host'     => '',
+			'database' => '',
+			'username' => '',
+			'password' => '',
 			'charset'  => 'utf8',
 			'prefix'   => '',
             'schema'   => 'public',
