@@ -22,3 +22,5 @@ Once you connect this application to your database (from a fork of this reposito
 
 **username:** admin
 **password:** password
+
+MIT License
